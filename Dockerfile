@@ -4,7 +4,8 @@ MAINTAINER uraura <t@urau.la>
 RUN set -x \
     && apt update \
     && apt install libsasl2-dev \
-    && pip install superset
+    && pip install superset \
+    && pip install mysqlclient
 
 ARG USERNAME=admin
 ARG PASSWORD=password
